@@ -1,0 +1,193 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body{
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #131518;
+}
+
+.card{
+  width: 32.7rem;
+  height: 36rem;
+  border-radius: 1.5rem;
+  background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 90%);
+  padding:2.4rem 2.4rem 3.2rem 2.4rem;
+}
+
+.starIcon{
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  padding: 13.3px 12.7px 13.3px 13.3px;
+  background-color: #262e38;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.rating-container{
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.rating-button{
+    width: 42px;
+    height: 42px;
+    background-color: #262e38;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.71;
+    letter-spacing: 0.18px;
+    text-align: center;
+    color: #7c8798;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.rating-button:hover {
+  background-color: #7c8798;
+  color: #fff;
+}
+p{
+    font-size: 1.4rem;
+    line-height: 1.57;
+    text-align: left;
+    color: #969fad;
+}
+
+.submit{
+    font-family: "Overpass", sans-serif;
+    width: 27.9rem;
+    height: 4.5rem;
+    border-radius: 22.5px;
+    background-color: #fc7614;
+    border:none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1.87px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submit:hover{
+  background-color: #fff;
+  color: #fc7614;
+}
+.submitted-card{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 327px;
+  height: 360px;
+  padding: 34px 24px 37px;
+  border-radius: 15px;
+  background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 90%);
+}
+
+.thankYouIcon{
+  order:-2;
+  padding-bottom: 2.4rem;
+}
+.selected-container{
+  order:-1;
+  width: 16.8rem;
+  height: 3.2rem;
+  padding: 5px 12px;
+  border-radius: 22.5px;
+  background-color: #262e38;
+  margin-bottom: 2.4rem;
+}
+
+.selected-rating{
+  line-height: 1.57;
+  color: #fc7614;
+  font-weight: 300;
+}
+.rating-button.selected {
+  background-color: #fc7614;
+  color:#fff;
+}
+
+.submitted-text{
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .card{
+    width: 41.2rem;
+    height: 41.6rem;
+    padding: 3.2rem 3.9rem 2.4rem 3.2rem;
+    border-radius: 3rem;
+  }
+
+  .starIcon{
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: 1.6rem 1.53rem 1.6rem 1.6rem;
+  margin-bottom: 3rem;
+  }
+
+  h1{
+    font-size: 2.8rem;
+    padding-bottom: 0.7rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .rating-container {
+    padding-bottom: 3.2rem;
+    gap: 2.1rem;
+  }
+
+  .rating-button {
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+  }
+
+  .submit{
+    width: 34.1rem;
+    font-size: 1.5rem;
+  }
+  .submitted-card{
+    width: 41.2rem;
+    height: 41.6rem;
+    padding: 4.5rem 4rem 4.5rem 3.2rem;
+    border-radius: 3rem;
+  }
+
+  .thankYouIcon {
+    padding-bottom: 3.6rem;
+  }
+
+  .selected-container {
+    width: 19.3rem;
+    padding: 4px 1.9rem 4px 2rem;
+    margin-bottom: 3.2rem;
+}
+}
